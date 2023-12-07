@@ -32,9 +32,7 @@ const fileupload = require("express-fileupload")
 app.use(fileupload())
 
 // routes
-app.use("/" , require("./routes/indexRoutes.js"))
-app.use("/resume" , require("./routes/resumeRoutes.js"))
-app.use("/employe" , require("./routes/employeRoutes.js"))
+app.use("/" , require("./routes/employeRoutes.js"))
 
 // error handling
 
